@@ -79,7 +79,7 @@ int print_non_printable(va_list types, char buffer[],
 
 	while (str[j] != '\0')
 	{
-		if (is_printable(str[i]))
+		if (is_printable(str[j]))
 			buffer[j + offset] = str[j];
 		else
 			offset += append_hexa_code(str[j], buffer, j + offset);
@@ -126,7 +126,7 @@ int print_reverse(va_list types, char buffer[],
 	for (j = 0; str[j]; j++)
 		;
 
-	for (j = i - 1; j >= 0; j--)
+	for (j = j - 1; j >= 0; j--)
 	{
 		char z = str[j];
 
