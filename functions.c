@@ -80,7 +80,7 @@ int print_string(va_list types, char buffer[],
  * print_percent - Prints a percent sign
  * @types:args
  * @buffer:Buffer
- * @flags:Calculates 
+ * @flags:Calculates
  * @width:width
  * @precision:Precision
  * @size: Size
@@ -122,7 +122,7 @@ int print_int(va_list types, char buffer[],
 	n = convert_size_number(n, size);
 
 	if (n == 0)
-		buffer[i--] = '0';
+		buffer[j--] = '0';
 
 	buffer[BUFF_SIZE - 1] = '\0';
 	num = (unsigned long int)n;
@@ -151,7 +151,7 @@ int print_int(va_list types, char buffer[],
  * @flags:flags
  * @width:width.
  * @precision:Precision
- * @size:Size 
+ * @size:Size
  * Return:char
  */
 int print_binary(va_list types, char buffer[],
