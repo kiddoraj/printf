@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * printf_srev - function that prints a string in reverse
  *@args:args
